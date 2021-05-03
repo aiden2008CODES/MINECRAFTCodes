@@ -1,0 +1,206 @@
+clientMessage(messagestring);makes a message in the chat
+
+getCarriedItem();gets the Id of the carried item
+
+preventDefault();prevents the default action
+
+print(messagestring);makes a popup message of the specified message
+
+spawnPigZombie(x, y, z, carrieditem, texture);spawns a zombie pig man at the specified coords with the specified texture and the specified item held
+
+ModPE.getItemName(par1int, par2int, par3boolean);not sure
+
+ModPE.joinServer(IP adress, port);makes you join a server
+
+ModPE.langEdit(par1String, par2String);not sure
+
+ModPE.leaveGame();quits you from the world
+
+ModPE.log(messagestring);prints the specified message to the log
+
+ModPE.overrideTexture(par1String, par2String);not sure
+
+ModPE.readData(name of save); loads save data
+
+ModPE.removeData(name of save);removes the specified savedata
+
+ModPE.resetImages();sets the textures to default
+
+ModPE.saveData(name of save, variable);saves the specified variable
+
+ModPE.selectLevel(par1String, par2String, par3String, par4int);not sure
+
+ModPE.setFoodItem(itemid, texture, itemdata,healed halfhearts,name);creates a new food item that heals the specified amount with the specified texture and id
+
+ModPE.setGameSpeed(tickspersecond);sets the game speed
+
+ModPE.setGuiBlocks(url);sets the GUI blocks texture to the image at the specified url
+
+ModPE.setItem(itemId, itemtexture, itemdata, itemnamestring);creates a new item with the specified texture and the specified id
+
+ModPE.setItems(url);sets the items texture to the image at the specified url
+
+ModPE.setTerrain(url);sets the terrain texture to the image at the specified url
+
+ModPE.takeScreenshot(path);takes then saves a screenshot of the game to the specified path
+
+Level.destroyBlock(x, y, z, true/false);destroys a block at the specified coordinates
+
+Level.dropItem(x, y, z, height offset,item , amount,itemdata);drops an item at the specified coordinates
+
+Level.explode(x, y, z, explosionsize);makes an explosion at the specified coordinates of the specified size
+
+Level.getAddress();not sure
+
+Level.getChestSlot(x, y, z, slot);tells the itemid of the item in the specified chest slot
+
+Level.getChestSlotCount(x, y, z, slot);tells the amount of items in the specified chest slot
+
+Level.getChestSlotData(x, y, z, slot);tells the data of the item in the specified chest slot
+
+Level.getData(x, y, z);tells the data of the block at the specified coordinates
+
+Level.getGameMode();tells whether the player is in creative or survival
+
+Level.getSignText(x, y, z, line);tells the text on a sign
+
+Level.getTile(x, y, z);tells the blockid of the block at the specified coordinates
+
+Level.getTime();tells the time of the world
+
+Level.getWorldDir();not sure
+
+Level.getWorldName();tells the name of the world you are in
+
+Level.playSound(x,y,z,soundstring,volume, pitch);plays a sound at the specified coordinates
+
+Level.playSoundEnt(entity, soundstring, volume, pitch);plays a sound at the specified entity
+
+Level.setChestSlot(x, y, z, slot, item, numberofitems, itemdata);sets the contents of the chest at the specified coordinates
+
+Level.setGameMode(gamemode); sets the players gamemode. 1=survival and 0=creative
+
+Level.setNightMode(true/false);sets the night mode of the nether reactor
+
+Level.setSignText(x, y, z, line, text);sets the text of the sign at the specified coordinates
+
+Level.setSpawn(x, y, z);sets your respawn coordinates to the specified place
+
+Level.setTile(x, y, z, blockid, blockdata);places the specified block at the specified coordinates
+
+Level.setTime(time);sets the time in the game
+
+Level.spawnChicken(x, y, z, texture);spawns a chicken with the specified.texture at the specified coordinates
+
+Level.spawnCow(x, y, z, texturepath);spawns a cow with the specified.texture at the specified coordinates
+
+Level.spawnMob(x, y, z, entityId, texturepath);spawns a mob at the specified coordinates with the specified texture
+
+
+Player.addItemCreativeInv(item, amount, itemdata);adds an item to the creative inventory
+
+Player.addItemInventory(item, amountofitems, itemdata);adds the specified item and amount of items to the players inventory
+
+Player.clearInventorySlot(slot);removes the items in the specified player slot
+
+Player.getArmorSlot(slot);tells the item in the specified armor slot
+
+Player.getArmorSlotDamage(slot);tells the damage of the item in  the specified armor slot
+
+Player.getCarriedItem();tells the item in the players selected slot
+
+Player.getCarriedItemCount();tells the amount of items in the players selected slot
+
+Player.getCarriedItemData();tells the data of the item in the players selected slot
+
+Player.getEntity();tells which entity is the player, 
+
+Player.getInventorySlot(slot);tells what item is in the specified slot
+
+Player.getInventorySlotCount(slot);tells how many of the item is in the specified slot
+
+Player.getInventorySlotData(slot);tells the data of the item in the specified slot
+
+Player.getName(getPlayerEnt());tells the players name
+
+Player.getSelectedSlotId();tells which slot the player has selected
+
+Player.getX();gets the players x coordinate
+
+Player.getY();gets the players y coordinate
+
+Player.getZ();gets the players z coordinate
+
+Player.isPlayer();not sure
+
+Player.setArmorSlot(slot, item, itemdata);
+
+Player.setHealth(half-hearts);sets the players health
+
+
+Entity.getAnimalAge(entity);tells if an entity is an adult or baby
+
+Entity.getEntityTypeId(entity);gets the Id of an entity
+
+Entity.getHealth(entity);tells the health of an entity
+
+Entity.getPitch(entity);tells how high or low an entity is looking
+
+Entity.getVelX(entity);tells how fast an entity is moving on the x coordinate
+
+Entity.getVelY(entity);tells how fast an entity is moving on the y coordinate
+
+Entity.getVelZ(entity);tells how fast an entity is moving on the z coordinate
+
+Entity.getX(entity);gets an entities z coordinate
+
+Entity.getY(entity);gets an entities y coordinate
+
+Entity.getYaw(entity);gets the direction left/right an entity is looking.
+
+Entity.getZ(entity);gets the z coordinate of an entity
+
+Entity.remove(entity);removes an entity
+
+Entity.rideAnimal(entity that will ride, ridden entity);makes an entity ride another entity
+
+Entity.setAnimalAge(entity, age);makes a mob a baby or adult
+
+Entity.setCarriedItem(entity, item, itemdata);sets the entities carried item
+
+Entity.setFireTicks(entity, ticks);puts a mob on fire for a set amount of time
+
+Entity.setHealth(entity, half-hearts);sets the health of a mob
+
+Entity.setMobSkin(entity, path);sets a mobs skin the image at the path in the assets folder
+
+Entity.setPosition(entity,x, y,z);teleports a mob to specific coordinates
+
+Entity.setPositionRelative(entity, distanceX, distanceY,distanceZ);sets a mobs position relative to itself
+
+Entity.setRenderType(entity, rendertype);changes a mobs shape to another mobs shape
+
+Entity.setRot(entity, rotation, rotation);makes an entity rotate
+
+Entity.setSneaking(entity, true/false);if a mob should sneak or not
+
+Entity.setVelX(entity, velocity);makes a mob fling on the z axis
+
+Entity.setVelY(entity, velocity);makes a mob fling on the x axis
+
+Entity.setVelZ(entity, velocity);makes an entity fly up.
+
+
+Block.defineBlock();doesn't work
+
+Block.setColor(par1int, par2Scriptable)doesn't work
+
+Block.setDestroyTime(block, destroy time)how fast blocks are destroyed
+
+Block.setExplosionResistance(block, explodelevel);how much explosion is needed to explode a block
+
+Block.setLightLevel(block, lightlevel);how much light a block gives off.
+
+Block.setRenderLayer(block, transparency);how transparent a block is
+
+Block.setShape(startwidth, startheight, startlength, endwidth, endheight, endlength, block);the shape of a block
